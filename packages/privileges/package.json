@@ -1,0 +1,38 @@
+{
+    "name": "@reactive-forms/privileges",
+    "version": "0.6.3",
+    "description": "Package for field privileges",
+    "author": "ReactiveForms team",
+    "homepage": "https://github.com/ArtiomTr/reactive-forms#readme",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "source": "src/index.ts",
+    "types": "dist/privileges.d.ts",
+    "scripts": {
+        "build": "aqu build",
+        "test": "aqu test --passWithNoTests",
+        "test:watch": "aqu test --watch",
+        "test:coverage": "aqu test --coverage --json --silent --ci --outputFile=\"report.json\"",
+        "test:log-coverage": "aqu test --coverage --silent --ci --coverageReporters=text",
+        "lint": "eslint .",
+        "lint:fix": "npm run lint --fix",
+        "prepublish": "reactive-publisher"
+    },
+    "devDependencies": {
+        "@reactive-forms/core": "*",
+        "@reactive-tools/eslint-config": "*",
+        "@reactive-tools/publisher": "*",
+        "@testing-library/react-hooks": "^7.0.2",
+        "aqu": "^0.1.1",
+        "react": "^17.0.2",
+        "typescript": "^4.5.4"
+    },
+    "dependencies": {
+        "pxth": "^0.5.0",
+        "tiny-invariant": "^1.2.0"
+    },
+    "peerDependencies": {
+        "@reactive-forms/core": "^0.5.0",
+        "react": ">=16"
+    }
+}

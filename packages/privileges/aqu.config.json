@@ -1,0 +1,14 @@
+{
+    "buildOptions": {
+        "target": ["es2019", "chrome58", "firefox57", "safari11", "edge16", "node12"]
+    },
+    "dtsBundleGeneratorOptions": {
+        "output": {
+            "inlineDeclareExternals": true
+        },
+        "libraries": {
+            "importedLibraries": ["react", "@reactive-forms/core", "pxth"],
+            "allowedTypesLibraries": []
+        }
+    }
+}
