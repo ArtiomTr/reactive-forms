@@ -23,3 +23,6 @@ yarn-error.log*
 scripts/*.mjs
 coverage
 **/.turbo
+
+# vscode
+launch.json

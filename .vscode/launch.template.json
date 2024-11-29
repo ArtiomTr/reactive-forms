@@ -5,8 +5,8 @@
 			"name": "Debug Core Tests",
 			"type": "node",
 			"request": "launch",
-			"runtimeArgs": ["--inspect-brk", ".\\node_modules\\jest\\bin\\jest.js", "--watch", "useDecimalField"],
-			"cwd": "${workspaceFolder}/packages/x",
+			"runtimeArgs": ["--inspect-brk", ".\\node_modules\\jest\\bin\\jest.js", "--watch"],
+			"cwd": "${workspaceFolder}/packages/core",
 			"console": "integratedTerminal",
 			"internalConsoleOptions": "neverOpen",
 			"port": 9229
