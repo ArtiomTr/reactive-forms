@@ -8,10 +8,12 @@ export class ConversionError extends Error {
 	}
 }
 
-export type ConverterFieldConfig<T> = {
+export type ValueConverter<T> = {
 	parse: (value: string) => T;
 	format: (value: T) => string;
-} & FieldConfig<T>;
+};
+
+export type ConverterFieldConfig<T> = ValueConverter<T> & FieldConfig<T>;
 
 export type ConverterFieldBag<T> = {
 	text: string;
